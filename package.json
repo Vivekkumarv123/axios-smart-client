@@ -1,0 +1,43 @@
+{
+  "name": "axios-smart-client",
+  "version": "1.0.3",
+  "description": "A smart Axios wrapper with multi-baseURL support, token injection, retry logic, and simplified API usage.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs.js",
+    "import": "./dist/index.esm.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "build": "babel src --out-dir dist && cp dist/index.js dist/index.cjs.js && cp dist/index.js dist/index.esm.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "axios",
+    "http",
+    "api",
+    "client",
+    "wrapper",
+    "smart-client",
+    "token",
+    "retry",
+    "baseURL",
+    "request",
+    "fetch"
+  ],
+  "author": "Vivek Kumar Verma",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
